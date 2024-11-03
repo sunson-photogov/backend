@@ -4,7 +4,7 @@ import cv2
 from pathlib import Path
 
 def process_image(file_path: Path, visa_type: str) -> Path:
-    output_path = Path("process") / f"{visa_type}_{file_path.name}"
+    output_path = Path("processed") / f"{visa_type}_{file_path.name}"
 
     if visa_type == "DV Lottery":
         dimensions = (600, 600)
